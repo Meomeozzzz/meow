@@ -1,0 +1,133 @@
+
+#!/bin/bash
+
+clear
+
+# Colors
+RED='\033[0;31m'
+GRN='\033[0;32m'
+CYN='\033[0;36m'
+YEL='\033[1;33m'
+NC='\033[0m' # No Color
+
+# ASCII Art Banner
+echo -e "${YEL}"
+cat << "EOF"
+__________    ________ 
+          _____                            _____          
+         /\    \                          /\    \         
+        /::\    \                        /::\    \        
+       /::::\    \                      /::::\    \       
+      /::::::\    \                    /::::::\    \      
+     /:::/\:::\    \                  /:::/\:::\    \     
+    /:::/__\:::\    \                /:::/  \:::\    \    
+   /::::\   \:::\    \              /:::/    \:::\    \   
+  /::::::\   \:::\    \            /:::/    / \:::\    \  
+ /:::/\:::\   \:::\____\          /:::/    /   \:::\ ___\ 
+/:::/  \:::\   \:::|    |        /:::/____/  ___\:::|    |
+\::/   |::::\  /:::|____|        \:::\    \ /\  /:::|____|
+ \/____|:::::\/:::/    /          \:::\    /::\ \::/    / 
+       |:::::::::/    /            \:::\   \:::\ \/____/  
+       |::|\::::/    /              \:::\   \:::\____\    
+       |::| \::/____/                \:::\  /:::/    /    
+       |::|  ~|                       \:::\/:::/    /     
+       |::|   |                        \::::::/    /      
+       \::|   |                         \::::/    /       
+        \:|   |                          \::/____/        
+         \|___|                                        
+EOF
+echo -e "${NC}"
+
+# Subscribe animation
+echo -ne "${GRN}🔥 Please Subscribe \n"
+for i in {1..3}; do
+  echo -ne "${CYN}Subscribing To RasINGamerZ"
+  for dot in {1..3}; do
+    echo -n "."
+    sleep 0.3
+  done
+  echo -ne "\r                     \r"
+done
+echo -e "${GRN} Thanks for Subscribing! If Not Do It Rn${NC}\n"
+sleep 1
+
+#!/bin/bash
+# Install 
+cd
+cd blueprints
+mv snowflakes.blueprint /var/www/pterodactyl
+cd /var/www/pterodactyl
+blueprint -install snowflakes.blueprint
+
+#!/bin/bash
+# Install 
+cd blueprints
+mv loader.blueprint /var/www/pterodactyl
+cd /var/www/pterodactyl
+blueprint -install loader.blueprint
+
+#!/bin/bash
+# Install 
+
+cd blueprints
+mv versionchanger.blueprint /var/www/pterodactyl
+cd /var/www/pterodactyl
+blueprint -install versionchanger.blueprint
+
+#!/bin/bash
+# Install 
+
+cd blueprints
+mv euphoria.blueprint /var/www/pterodactyl
+cd /var/www/pterodactyl
+blueprint -install euphoria.blueprint
+
+#!/bin/bash
+# Install 
+
+cd blueprints
+mv bluetables.blueprint /var/www/pterodactyl
+cd /var/www/pterodactyl
+blueprint -install bluetables.blueprint
+
+#!/bin/bash
+# Install 
+
+cd blueprints
+mv simplefooters.blueprint /var/www/pterodactyl
+cd /var/www/pterodactyl
+blueprint -install simplefooters.blueprint
+
+#!/bin/bash
+# Install 
+
+cd blueprints
+mv blueannoucements.blueprint /var/www/pterodactyl
+cd /var/www/pterodactyl
+blueprint -install blueannoucements.blueprint
+
+#!/bin/bash
+# Install 
+
+cd blueprints
+mv Betteradmin.blueprint /var/www/pterodactyl
+cd /var/www/pterodactyl
+blueprint -install Betteradmin.blueprint
+
+#!/bin/bash
+# Install 
+
+cd blueprints
+mv shownodeids.blueprint /var/www/pterodactyl
+cd /var/www/pterodactyl
+blueprint -install shownodeids.blueprint
+
+#!/bin/bash
+# Install 
+
+cd blueprints
+mv severimporter.blueprint /var/www/pterodactyl
+cd /var/www/pterodactyl
+blueprint -install serverimporter.blueprint
+
+echo -e "${GRN}✅ installation complete!${NC}"
